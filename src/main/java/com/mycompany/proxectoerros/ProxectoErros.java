@@ -15,11 +15,12 @@ public class ProxectoErros {
         System.out.println("Hello World!");
         int num=789;
         int resto;
-        int numInvertido=0;
+        int numInvertido=0;       
         while(num!=0){
-            resto=num/10;
+            resto=num%10;
             numInvertido=numInvertido*10+resto;
+            num/=10;
         }
-        System.out.println("O numero invertido é " +numIvertido);
+        System.out.println("O numero invertido é " +numInvertido);
     }
 }
